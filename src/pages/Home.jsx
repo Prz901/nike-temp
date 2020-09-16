@@ -3,11 +3,13 @@ import React from 'react'
 import About from '../components/About/About'
 import run from '../utils/imageBackground/nike-run.jpg'
 
+import Banner from '../components/Banner/Banner'
+import Footer from '../components/Footer/Footer'
+
 export default function Home() {
   return (
     <>
       <div className=' flex flex-col h-screen w-full bg-white relative'>
-        {/* <div className='nike'></div> */}
         <div className='fixed bg-white z-10 w-full '>
           <div className='flex items-center justify-between border-solid border-t border-gray-300  w-full '>
             <div className='flex w-1/2'>
@@ -80,7 +82,7 @@ export default function Home() {
         </div>
 
         <div className='flex items-center justify-between h-full w-full'>
-          <img src={run} alt='corrida' className='px-20' />
+          <img src={run} alt='corrida' className='px-20 w-1/2' />
           <div className='flex flex-col justify-center items-end h-full w-full px-32'>
             <div className='flex flex-col items-start justify-center w-full'>
               <h1 className='text-4xl font-thin py-3 tracking-wide'>Nike Movement Experience</h1>
@@ -105,6 +107,8 @@ export default function Home() {
         </div>
       </div>
       <About />
+      {/* <Banner image={'https://images.lojanike.com.br/hotsitevitrine/ni/0/1600093075/assets/img/mobile/phantom.jpg'}/> */}
+      <Footer />
     </>
   )
 }

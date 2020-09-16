@@ -11,6 +11,33 @@
   display: inline-block;
 } */
 
+/* Animação de expanção do Footer */
+.grow {
+  height: 150px;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  overflow: hidden;
+}
+
+.grow:hover {
+  height: 100%;
+  background: blueviolet;
+}
+
+.top-70 {
+  top: 70%;
+}
+.top-80 {
+  top: 80%;
+}
+.top-85 {
+  top: 85%;
+}
+.top-90 {
+  top: 90%;
+}
+
 .min-logo {
   width: 30%;
 }
