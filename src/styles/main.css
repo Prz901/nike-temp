@@ -11,6 +11,14 @@
   display: inline-block;
 } */
 
+.min-logo {
+  width: 30%;
+}
+
+.border-1 {
+  border-width: 1px;
+}
+
 .btn {
   width: 300px;
   height: 50px;
@@ -27,7 +35,8 @@
   transition: 1s;
 }
 
-.btn::before, .btn::after {
+.btn::before,
+.btn::after {
   position: absolute;
   background: black;
   z-index: -1;
@@ -47,11 +56,11 @@
 
 .noselect {
   -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn:hover::before {
@@ -68,45 +77,45 @@
   background: black;
 }
 
-.nike{
-	position:absolute;
-  width:470px;
-  height:200px;
-	overflow:hidden;
-	font-family: Arial, sans-serif;
-	font-size:40px;
-	line-height: 300px;
-	text-indent: 350px;
-	z-index: 3;
+.nike {
+  position: absolute;
+  width: 470px;
+  height: 200px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  line-height: 300px;
+  text-indent: 350px;
+  z-index: 3;
 }
 
-.nike:before{
-	content:"";
-	position:absolute;
-	top:-250px;
-	left:190px;
-	width: 150px;
-	height:550px;
-	background: black;
-	border-top-left-radius: 60px 110px;
-	border-top-right-radius: 130px 220px;
-	transform: rotate(-113deg);
-	z-index: 1;
+.nike:before {
+  content: '';
+  position: absolute;
+  top: -250px;
+  left: 190px;
+  width: 150px;
+  height: 550px;
+  background: black;
+  border-top-left-radius: 60px 110px;
+  border-top-right-radius: 130px 220px;
+  transform: rotate(-113deg);
+  z-index: 1;
 }
 
 .nike:after {
-    content: "";
-    position: absolute;
-    top: -235px;
-    left: 220px;
-    width: 120px;
-    height: 500px;
-    background: black;
-    border-top-left-radius: 60px  110px;
-    border-top-right-radius: 130px 220px;
-    background: white;
-    transform: rotate(-104deg);
-    z-index: 2;
+  content: '';
+  position: absolute;
+  top: -235px;
+  left: 220px;
+  width: 120px;
+  height: 500px;
+  background: black;
+  border-top-left-radius: 60px 110px;
+  border-top-right-radius: 130px 220px;
+  background: white;
+  transform: rotate(-104deg);
+  z-index: 2;
 }
 
 .btn-home {
@@ -125,7 +134,8 @@
   transition: 1s;
 }
 
-.btn-home::before, .btn-home::after {
+.btn-home::before,
+.btn-home::after {
   position: absolute;
   background: white;
   z-index: -1;
@@ -145,11 +155,11 @@
 
 .noselect-home {
   -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .btn-home:hover::before {
@@ -164,4 +174,18 @@
 
 .btn-home:hover {
   background: white;
+}
+
+.animate-border::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  background: black;
+  transition: width 0.4s;
+}
+
+.animate-border:hover::after {
+  width: 98%;
+  transition: width 0.3s;
 }
