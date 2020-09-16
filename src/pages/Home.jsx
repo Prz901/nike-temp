@@ -9,23 +9,62 @@ export default function Home() {
       <div className=' flex flex-col h-screen w-full bg-white relative'>
         {/* <div className='nike'></div> */}
         <div className='fixed bg-white z-10 w-full '>
-          <div className='flex items-center justify-between border-solid border-t border-gray-300  w-full'>
+          <div className='flex items-center justify-between border-solid border-t border-gray-300  w-full '>
             <div className='flex w-1/2'>
-              <div className='border-r border-solid border-gray-900 w-1/12'>
+              <div className='border-r border-solid border-gray-300 w-1/12'>
                 <div className='flex  justify-center '>
-                  <img src='https://images.lojanike.com.br/topbar/ni/9_20190522191510.svg' alt='' className='min-logo py-2' />
+                  <img
+                    src='https://images.lojanike.com.br/topbar/ni/9_20190522191510.svg'
+                    alt=''
+                    className='min-logo py-2 opacity-25 cursor-pointer hover:opacity-100'
+                  />
                 </div>
               </div>
-
-              <p>Junte-se a Nós</p>
-              {/* <img src='https://images.lojanike.com.br/topbar/ni/8_20190522191105.png' alt='' className='min-logo' />
-              <img src='https://images.lojanike.com.br/topbar/ni/12_20200512184709.png' alt='' className='min-logo' /> */}
+              <div className='border-r border-solid border-gray-300 w-3/12'>
+                <div className='flex  items-center justify-center h-full  opacity-25 cursor-pointer hover:opacity-100'>
+                  <p>Junte-se a Nós</p>
+                </div>
+              </div>
+              <div className='border-r border-solid border-gray-300 w-1/12'>
+                <div className='flex  justify-center '>
+                  <img
+                    src='https://images.lojanike.com.br/topbar/ni/8_20190522191105.png'
+                    alt=''
+                    className='min-logo py-2 opacity-25 cursor-pointer hover:opacity-100'
+                  />
+                </div>
+              </div>
+              <div className='border-r border-solid border-gray-300 w-1/12'>
+                <div className='flex  items-center h-full justify-center '>
+                  <img
+                    src='https://images.lojanike.com.br/topbar/ni/12_20200512184709.png'
+                    alt=''
+                    className='min-logo py-2 opacity-25 cursor-pointer hover:opacity-100'
+                  />
+                </div>
+              </div>
             </div>
-            <div className='flex items-center '>
-              <p>Acompanhar Pedidos</p>
-              <p>Login/ Increver-se</p>
-              <p>Ajuda</p>
-              <i className='fas fa-shopping-cart' />
+            <div className='flex items-center justify-end w-1/2 '>
+              <div className=' w-2/12'>
+                <div className='flex  items-center justify-center h-full  opacity-25 cursor-pointer hover:opacity-100'>
+                  <p className='text-base'>Acompanhar Pedidos</p>
+                </div>
+              </div>
+              <div className=' w-2/12'>
+                <div className='flex  items-center justify-center h-full  opacity-25 cursor-pointer hover:opacity-100'>
+                  <p className='text-base'>Login/ Increver-se</p>
+                </div>
+              </div>
+              <div className=' w-1/12'>
+                <div className='flex  items-center justify-center h-full  opacity-25 cursor-pointer hover:opacity-100'>
+                  <p className='text-base'>Ajuda</p>
+                </div>
+              </div>
+              <div className=' w-1/12'>
+                <div className='flex  items-center justify-center h-full  opacity-25 cursor-pointer hover:opacity-100'>
+                  <i className='fas fa-shopping-cart' />
+                </div>
+              </div>
             </div>
           </div>
 
