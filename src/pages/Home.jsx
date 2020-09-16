@@ -107,7 +107,7 @@ export default function Home() {
         </div>
       </div>
       <About />
-      {/* <Banner image={'https://images.lojanike.com.br/hotsitevitrine/ni/0/1600093075/assets/img/mobile/phantom.jpg'}/> */}
+      <Banner image={'https://images.lojanike.com.br/hotsitevitrine/ni/0/1600200569/assets/img/mobile/alphafly-tempo.jpg'} />
       <Footer />
     </>
   )

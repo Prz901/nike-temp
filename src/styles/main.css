@@ -13,7 +13,7 @@
 
 /* Animação de expanção do Footer */
 .grow {
-  height: 150px;
+  height: 147px;
   position: relative;
   transition: height 0.5s;
   -webkit-transition: height 0.5s;
@@ -22,7 +22,21 @@
 
 .grow:hover {
   height: 100%;
-  background: blueviolet;
+}
+
+/* Roda a imagem do tenis */
+.rotate-shoes {
+  transform: rotate(90deg);
+  width: 70%;
+}
+/* arruma o z index para nao ficar batendo no do header */
+.z-index-image {
+  z-index: 1;
+}
+
+/* Arrumando os tops que o meu tailwind nao tem */
+.top-20 {
+  top: 20%;
 }
 
 .top-70 {
